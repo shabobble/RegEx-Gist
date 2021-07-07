@@ -17,7 +17,6 @@ A popular use for regular expressions is to validate that a provided string is a
 - [Grouping Constructs](#grouping-constructs)
 - [Bracket Expressions](#bracket-expressions)
 - [Character Classes](#character-classes)
-- [The OR Operator](#the-or-operator)
 - [Flags](#flags)
 - [Character Escapes](#character-escapes)
 
@@ -69,8 +68,6 @@ Character classes are a notation referring to any character from a specific set.
 ```
 
 The \d in this segment of the expression is referring to any ONE digit. 
-
-### The OR Operator
 
 ### Flags
 
