@@ -25,6 +25,8 @@ A popular use for regular expressions is to validate that a provided string is a
 
 ### Anchors
 
+The characters ^ and $ are start-of-line and end-of-line anchors recently. By putting ^ before a character, you are saying the first character in your string must match that character and by putting a $ after a character you are saying that the last character in your string must match that character. In our regular expression above, by enclosing the entire thing between ^ and $, we are saying that the regular expression must match the entire string.
+
 ### Quantifiers
 
 ### Grouping Constructs
