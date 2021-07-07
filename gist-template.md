@@ -70,6 +70,18 @@ The \d in this segment of the expression is referring to any ONE digit.
 
 ### Character Escapes
 
+Backslashes in regular expressions precede literal characters and escape them, signifying that you are referring to the literal character following the backslash and not anything it might refer to elsewhere in a regular expression. In our example above, we see them three times:
+
+```
+[a-z0-9_\.-]
+ [\da-z\.-]
+ [a-z\.]
+ ```
+ 
+ Above are the three segments from the bracket expressions section, and we need to look more specifically at the backslash before the dot and the hyphen, which is telling the expression that you are looking for a dot and/or a hyphen in that portion of the string.
+ 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+This gist was written by Patrick Sullivan, a junior web developer from Manchester, New Hampshire. You can find my GitHub below:
+
+* [My GitHub](https://www.github.com/shabobble/)
