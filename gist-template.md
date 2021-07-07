@@ -35,9 +35,19 @@ Quantifiers simply indicate a number of characters to match, or the length range
 ([a-z\.]{2,6})
 ```
 
-is referring to the top level domain part of the e-mail address, i.e, the .com, .org, .edu. In this expression, we are looking for any string of characters that are letters between A and Z, where there are at least two and no more than six.
+is referring to the top level domain(TLD) part of the e-mail address, i.e, the .com, .org, .edu. In this expression, we are looking for any string of characters that are letters between A and Z, where there are at least two and no more than six.
 
 ### Grouping Constructs
+
+Grouping constructs are indicated by opening and closing parentheses, and they set off blocks of the regular expression as individual units apart from each other. In our regular expression example above, we have three grouped constructs:
+
+```
+([a-z0-9_\.-]+)
+([\da-z\.-]+)
+([a-z\.]{2,6})
+```
+
+The first group is referring to the username of the e-mail address, or the string coming before the @ symbol. The second is referring to the portion after the @ sign and before the ., i.e., yahoo, gmail, hotmail, etc. The third is the TLD mentioned in the Quantifiers section.
 
 ### Bracket Expressions
 
