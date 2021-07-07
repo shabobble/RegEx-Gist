@@ -62,6 +62,14 @@ Bracket expressions define the allowed range of characters in that section of th
 
 ### Character Classes
 
+Character classes are a notation referring to any character from a specific set. In our example above we have one instance of this:
+
+```
+\da-z\
+```
+
+The \d in this segment of the expression is referring to any ONE digit. 
+
 ### The OR Operator
 
 ### Flags
