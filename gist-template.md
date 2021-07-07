@@ -29,6 +29,14 @@ The characters ^ and $ are start-of-line and end-of-line anchors recently. By pu
 
 ### Quantifiers
 
+Quantifiers simply indicate a number of characters to match, or the length range of a set of characters that are being matched. In our example regular expression above:
+
+```
+([a-z\.]{2,6})
+```
+
+is referring to the top level domain part of the e-mail address, i.e, the .com, .org, .edu. In this expression, we are looking for any string of characters that are letters between A and Z, where there are at least two and no more than six.
+
 ### Grouping Constructs
 
 ### Bracket Expressions
