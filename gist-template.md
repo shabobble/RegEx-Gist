@@ -51,6 +51,15 @@ The first group is referring to the username of the e-mail address, or the strin
 
 ### Bracket Expressions
 
+Bracket expressions define the allowed range of characters in that section of the string you are matching. In our regular expression example above, we again have three constructs:
+
+ ```
+ [a-z0-9_\.-]
+ [\da-z\.-]
+ [a-z\.]
+ ```
+ The first is saying that the section before the @ sign can include any letters a through z, any numbers 0-9, as well as a dot or a hyphen. The second is saying that the section following the @ sign can include ONE number followed by any letters a through z. The third is saying that the section can only contain letters a through z. 
+
 ### Character Classes
 
 ### The OR Operator
