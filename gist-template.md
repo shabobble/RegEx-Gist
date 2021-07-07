@@ -1,10 +1,14 @@
-# Title (replace with your title)
+# Regular Expressions - Email Validation
 
-Introductory paragraph (replace this with your text)
+Regular expressions are a great method for performing validation in your code without relying on an external library, and are becoming increasingly popular recently. They can look a bit arcane from the outside, but understanding them is worth the read.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+A popular use for regular expressions is to validate that a provided string is an e-mail address. Such an expression may look like this: 
+
+```
+`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+```
 
 ## Table of Contents
 
